@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VW</title>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <link href="css/bootstrap-material-design.css" rel="stylesheet">
+    <link href="css/ripples.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        .form-group {
+    display: flex !important;
+    height: 55px !important;
+}
+
+.control-label {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    opacity: 0.4 !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    transform: translate3d(0, 22px, 0) scale(1) !important;
+    transform-origin: left top !important;
+    transition: 240ms !important;
+}
+
+.form-group.focused .control-label {
+    opacity: 1 !important;
+    transform: scale(0.75) !important;
+}
+
+.form-control {
+    align-self: flex-end !important;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: transparent !important;
+    transition: 240ms !important;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+    transition: none !important;
+}
+
+.form-group.focused .form-control::-webkit-input-placeholder {
+    color: #bbb !important;
+}
+.form-group.label-floating.focused label.control-label{top: -15px;margin-top: 0px !important;}
+.login_from .form-group label.control-label{margin-top: -8px;}
+    </style>
+</head>
+<body>
+<div class="top_bar"></div><!-- top_bar -->
+<div class="login_main">
+    <div class="container">
+        <div class="login_header_logo">
+            <img src="images/login_logo.png" align="logo" class="img-responsive">
+        </div><!-- login_header_logo End -->
+        <div class="login_content">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                    <div class="login_inner">
+                        <h2>Login</h2>
+                        <div class="login_from">
+                            <div class="form-group label-floating is-empty">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <label for="i5i" class="control-label">Email</label>
+                                <input type="email" class="form-control" id="i5i" value="dilippatel218@gmail.com">
+                            </div>
+                            <div class="form-group label-floating is-empty">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                <label for="i5i" class="control-label">password</label>
+                                <input type="password" class="form-control" id="i5i" value="123456">
+                            </div>
+                            <div class="clearfix">
+                            <a href="#" class="new_user" data-toggle="modal" data-target="#buy_coins">New user? Register now!</a>
+                            <a href="#" class="forgot_pass"  data-toggle="modal" data-target="#myModal">Forgot your password?</a>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" data-toggle="modal" data-target="#buy_voucher"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            
+                        </div><!-- login_from End -->
+                        <div class="login_socila">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-sm-12">
+                                        <div class="face_book">
+                                        <a href="#">
+                                            <button type="button" class="btn btn-lg btn-fb waves-effect waves-light">Sign in with facebook</button>
+                                            <i class="fa fa-facebook left"></i>
+                                        </a>
+                                        </div><!-- face_book End -->
+                                    </div><!-- col-md-4 col-sm-4 col-sm-12 End -->
+                                    <div class="col-md-4 col-sm-4 col-sm-12">
+                                        <div class="face_book goo_gle">
+                                        <a href="#">
+                                            <button type="button" class="btn btn-lg btn-gplus waves-effect waves-light">Sign in with Google</button>
+                                            <i class="fa fa-google-plus left"></i>
+                                        </a>
+                                        </div><!-- face_book End -->
+                                    </div><!-- col-md-4 col-sm-4 col-sm-12 End -->
+                                    <div class="col-md-4 col-sm-4 col-sm-12">
+                                        <div class="face_book login_btn">
+                                        <a href="#">
+                                            <button type="button" class="btn btn-lg btn-fb waves-effect waves-light">Login</button>
+                                            <i class=""></i>
+                                        </a>
+                                        </div><!-- face_book End -->
+                                    </div><!-- col-md-4 col-sm-4 col-sm-12 End -->
+                                </div><!-- row End -->
+                            </div><!-- login_socila End -->
+                    </div><!-- login_inner End -->
+                </div><!-- col-md-8 col-sm-12 col-xs-12 End -->
+            </div><!--  row End -->
+        </div><!-- login_content End -->
+    </div><!-- container End -->
+</div><!-- login_main End -->
+<div class="copyright_main login_footer">
+    <div class="container">
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> VOUCHER WINS | All Right Reserved</p>
+    </div><!-- container End -->
+</div><!-- copyright_main End -->
+<div class="modal fade forgotpass_modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><i class="zmdi zmdi-close"></i></button>
+                </div>
+                <h4 class="modal-title" id="myModalLabel">Forgot Password</h4>
+                <div class="modal-body">
+                <div class="form-group label-floating is-empty">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <label for="i5i" class="control-label">Email</label>
+                                <input type="email" class="form-control" id="i5i">
+                            </div></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- buy coins popup -->
+<div class="modal fade forgotpass_modal buy_coinspopup" id="buy_coins" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+            <div class="modal-content">
+                <div class="modal_bg">
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Buy Coins</h4>
+                        <button type="button" class="close" data-dismiss="modal"><img src="images/close.png" alt="close"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="coin_main">
+                            <ul>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="best_value">
+                                        <img src="images/best_value.png" alt="best_value" class="img-responsive">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>500,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">5,000,000</span>
+                                            <span class="coin_value">$50.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="best_value"><img src="images/most_popular.png" alt="most_popular" class="img-responsive"></div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="payment_cards">
+                            <ul class="clearfix">
+                                <li><a href="#"><img src="images/secure_payment.png" alt="secure_payment"></a></li>
+                                <li><a href="#"><img src="images/ssl.png" alt="ssl"></a></li>
+                                <li><a href="#"><img src="images/paypal.png" alt="paypal"></a></li>
+                                <li><a href="#"><img src="images/master_card.png" alt="master_card"></a></li>
+                                <li><a href="#"><img src="images/visa_card.png" alt="visa_card"></a></li>
+                                <li><a href="#"><img src="images/american_exp.png" alt="american_exp"></a></li>
+                                <li><a href="#"><img src="images/discover.png" alt="discover"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- buy voucher popup -->
+<div class="modal fade forgotpass_modal buy_coinspopup buy_vouchr" id="buy_voucher" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+            <div class="modal-content">
+                <div class="modal_bg">
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Buy Vouchers</h4>
+                        <button type="button" class="close" data-dismiss="modal"><img src="images/close.png" alt="close"></button>
+                        <div class="reward_point">
+                            <div class="reward_inner">
+                                <h3>Reward Point Redemption</h3>
+                                <ul>
+                                    <li>
+                                        <img src="images/gift.png" class="img-responsive">
+                                    </li>
+                                    <li class="rw_point">
+                                        <p>500</p>
+                                    </li>
+                                    <li class="enter_rw">
+                                        <input type="text">
+                                    </li>
+                                    <li class="reedem_btn">
+                                        <button type="button" class="btn btn-lg submit_btn waves-effect waves-light">Redeem</button>
+                                    </li>
+                                </ul>
+                                <p>Note: Must enter increments of 25 Reward Points</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="coin_main">
+                            <ul>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="best_value">
+                                        <img src="images/best_value.png" alt="best_value" class="img-responsive">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>500,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">5,000,000</span>
+                                            <span class="coin_value">$50.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="best_value"><img src="images/most_popular.png" alt="most_popular" class="img-responsive"></div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="coin_inner">
+                                        <div class="coin_left">
+                                            <span class="ws_coin"><p>was</p> <hr/>400,000</span>
+                                            <span class="plus_coin">+900%</span>
+                                        </div>
+                                        <div class="coin_right">
+                                            <span class="total_coin">4,000,000</span>
+                                            <span class="coin_value">$30.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <div class="payment_cards">
+                            <ul class="clearfix">
+                                <li><a href="#"><img src="images/secure_payment.png" alt="secure_payment"></a></li>
+                                <li><a href="#"><img src="images/ssl.png" alt="ssl"></a></li>
+                                <li><a href="#"><img src="images/paypal.png" alt="paypal"></a></li>
+                                <li><a href="#"><img src="images/master_card.png" alt="master_card"></a></li>
+                                <li><a href="#"><img src="images/visa_card.png" alt="visa_card"></a></li>
+                                <li><a href="#"><img src="images/american_exp.png" alt="american_exp"></a></li>
+                                <li><a href="#"><img src="images/discover.png" alt="discover"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End buy voucher popup -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/ripples.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        $('.form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+        }).trigger('blur');
+    </script>
+</body>
+</html>

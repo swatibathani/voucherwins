@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VW</title>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="http://fezvrasta.github.io/bootstrap-material-design/dist/css/ripples.min.css"> -->
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.css">
+<link rel="stylesheet" href="css/ripples.css">
+<link rel="stylesheet" href="css/material-design-iconic-font.css">
+<link href="css/jquery-ui-1.10.1.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.transitions.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="nav_main">
+        <div class="navbar navbar-default">
+          <div class="container">
+            <div class="nav_inner">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+              </div><!-- End navbar-header -->
+              <div class="navbar-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="#" class="user_name">Hi test 123!</a>
+                  </li>
+                  <li>
+                    <a href="#" class="user_img"><img src="images/user_profile.png" alt="user profile"></a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav cst_menu">
+                  <li class="dropdown">
+                      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">My Account
+                      <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Edit Profile</a></li>
+                          <li><a href="#">My Rewards</a></li>
+                          <li><a href="#">My Vouchers</a></li>
+                          <li><a href="#">My Play Coins</a></li>
+                          <li><a href="#">Order History</a></li>
+                          <li><a href="#">Purchase Vouchers</a></li>
+                          <li><a href="#">Purchase Play Coins</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Game Arcade
+                      <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Play Arcade</a></li>
+                          <li><a href="#">Favorite Games</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Store
+                      <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">View Products</a></li>
+                          <li><a href="#">My Cart</a></li>
+                          <li><a href="#">Saved Items</a></li>
+                          <li><a href="#">Previously Viewed Items</a></li>
+                          <li><a href="#">Previously Purchased Items</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Auctions
+                      <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">View Auctions</a></li>
+                          <li><a href="#">Bidding Activity</a></li>
+                          <li><a href="#">Auctions Won</a></li>
+                          <li><a href="#">Auctions Lost</a></li>
+                          <li><a href="#">Watched Items</a></li>
+                          <li><a href="#">Previously Viewed Items</a></li>
+                      </ul>
+                  </li>
+                  <li class="active"><a href="#">Forum </a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div><!-- End navbar-collapse -->
+              <div class="user_points">
+                 <ul>
+                  <li><a href="#">Vouchers  <span>123,456,789</span></a></li>
+                  <li><a href="#">Reward Points <span>123,456,789</span></a></li>
+                </ul>
+              </div><!-- End user_points -->
+              <div class="user_cart">
+                <ul>
+                  <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div><!-- End nav_inner -->
+          </div><!-- End container -->
+        </div><!-- End navbar-default -->
+    </div><!-- End nav_main -->
+
+
+   <div class="earned_voucher order_history">
+    <div class="container">
+      <div class="vw_advertisement_footer">
+        <img src="images/vw_advertisement_footer.jpg" alt="vw_advertisement_footer">
+      </div><!-- vw_advertisement_footer End -->
+      <div class="earned_voucher_inner">
+        <div class="alien_ufo_header clearfix">
+          <h2>Order History</h2>
+          <div class="date_time_con clearfix">
+            <div class="date_inner">
+              <input type="text" id="datetimepicker5" class="cst_datepicker"/>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+          </div><!-- date_time_con End -->
+        </div><!-- alien_ufo_header End -->
+
+        <div class="earned_table">
+          <div class="table-responsive">
+          <table class="table">
+            <tr>
+              <th>Date</th>
+              <th>Order Number</th>
+              <th>Total Paid</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>06/06/2016</td>
+              <td>
+                <div class="order_number_modal" data-toggle="modal" data-target=".order_popup">
+                  1234567891
+                </div>
+              </td>
+              <td>30$</td>
+              <td>Delivered</td>
+            </tr>
+            <tr>
+              <td>06/06/2016</td>
+              <td>1234567891</td>
+              <td>30$</td>
+              <td>Delivered</td>
+            </tr>
+            <tr>
+              <td>06/06/2016</td>
+              <td>1234567891</td>
+              <td>30$</td>
+              <td>Delivered</td>
+            </tr>
+            <tr>
+              <td>06/06/2016</td>
+              <td>1234567891</td>
+              <td>30$</td>
+              <td>Delivered</td>
+            </tr>
+            <tr>
+              <td>06/06/2016</td>
+              <td>1234567891</td>
+              <td>30$</td>
+              <td>Delivered</td>
+            </tr>
+            <tr>
+              <td>06/06/2016</td>
+              <td>1234567891</td>
+              <td>30$</td>
+              <td>Cancelled</td>
+            </tr>
+            <tr>
+              <td>06/06/2016</td>
+              <td>1234567891</td>
+              <td>30$</td>
+              <td>Delivered</td>
+            </tr>
+          </table>
+        </div>
+        </div><!-- earned_table End --> 
+      </div><!-- earned_voucher_inner End -->
+      <div class="cst_pagination">
+            <ul class="pagination pagination-sm">
+              <li class="disabled"><a href="javascript:void(0)"></a></li>
+              <li class="active"><a href="javascript:void(0)">1</a></li>
+              <li><a href="javascript:void(0)">2</a></li>
+              <li><a href="javascript:void(0)">3</a></li>
+              <li><a href="javascript:void(0)">4</a></li>
+              <li><a href="javascript:void(0)">5</a></li>
+              <li><a href="javascript:void(0)">6</a></li>
+              <li><a href="javascript:void(0)">7</a></li>
+              <li><a href="javascript:void(0)" class="rt_pagn"><img src="images/right_pagination.png" alt="right_pagination" class="img-responsive"></a></li>
+            </ul><!-- End pagination -->
+          </div><!-- End cst_pagination -->
+      <div class="vw_advertisement_footer">
+        <img src="images/vw_advertisement_footer.jpg" alt="vw_advertisement_footer">
+      </div><!-- vw_advertisement_footer End -->
+    </div><!-- container End -->
+  </div><!-- earned_voucher End -->
+
+  <div class="social_main">
+      <div class="container">
+          <div class="social_content">
+               <div class="social_content_box">
+                   <a href="javascript:void(0)" class="btn btn-raised face"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+               </div><!-- social_content_box End -->
+               <div class="social_content_box">
+                   <a href="javascript:void(0)" class="btn btn-raised go"><i class="fa fa-google-plus" aria-hidden="true"></i> Google</a>
+               </div><!-- social_content_box End -->
+               <div class="social_content_box">
+                   <a href="javascript:void(0)" class="btn btn-raised tw"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+               </div><!-- social_content_box End -->
+               <div class="social_content_box">
+                   <a href="javascript:void(0)" class="btn btn-raised yo"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube</a>
+               </div><!-- social_content_box End -->
+           </div><!-- social_content End -->
+      </div><!-- container End -->
+  </div><!-- social_main End -->
+
+  <div class="footer_main">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-3 col-xs-12">
+                   <div class="footer_box">
+                       <h2>About Us</h2>
+                       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."</p>
+                   </div><!-- footer_box End -->
+              </div><!-- col-md-3 col-sm-3 col-xs-12 End -->
+               <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="footer_box">
+                      <h2>Account Services</h2>
+                      <ul>
+                          <li><a href="#">My Account</a></li>
+                          <li><a href="#">Order History</a></li>
+                          <li><a href="#">Watched Auctions</a></li>
+                          <li><a href="#">Previously Viewed Items</a></li>
+                      </ul>
+                  </div><!-- footer_box End -->
+              </div><!-- col-md-3 col-sm-3 col-xs-12 End -->
+              <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="footer_box">
+                      <h2>Support</h2>
+                      <ul>
+                          <li><a href="#">Support Center</a></li>
+                          <li><a href="#">How It Works</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">Delivery</a></li>
+                      </ul>
+                  </div><!-- footer_box End -->
+              </div><!-- col-md-3 col-sm-3 col-xs-12 End -->
+              <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="footer_box">
+                      <h2>Information</h2>
+                      <ul>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Site Rules</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Terms & Conditions</a></li>
+                      </ul>
+                  </div><!-- footer_box End -->
+              </div><!-- col-md-3 col-sm-3 col-xs-12 End -->
+            </div><!-- row End -->
+      </div><!-- container End -->
+  </div><!-- footer_main End -->
+
+  <div class="copyright_main">
+      <div class="container">
+          <p><i class="fa fa-copyright" aria-hidden="true"></i> VOUCHER WINS Wireframe  | All Right Reserved</p>
+      </div><!-- container End -->
+  </div><!-- copyright_main End -->
+
+  <div class="mb_social">
+    <div class="container">
+      <div class="mb_sicon">
+        <ul>
+          <li>
+            <div class="m_fb"><a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="m_gp"><a href="#" class="fb"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="m_tw"><a href="#" class="fb"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="m_yt"><a href="#" class="fb"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div><!-- mb_sicon End -->
+      <div class="cst_conditions">
+        <ul>
+          <li><a href="#" class="condtn_name">Privacy & Policy</a></li>
+          <li><a href="#" class="condtn_name">Terms & Service</a></li>
+        </ul>
+      </div><!-- cst_conditions End -->
+    </div><!-- container End -->
+  </div><!-- mb_social End -->
+
+  <div class="footer_advt">
+    <img src="images/footer_advertise.png" alt="advertisement">
+    <span><i class="fa fa-times" aria-hidden="true"></i></span>    
+  </div><!-- footer_advt End -->
+    
+<div class="modal fade forgotpass_modal refer_modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><i class="zmdi zmdi-close"></i></button>
+                </div>
+                <h4 class="modal-title" id="myModalLabel">Refer to a friend</h4>
+                <div class="modal-body">
+                    <div class="form-group label-floating is-empty">
+                         <i class="zmdi zmdi-account-o"></i>
+                         <label for="i5i" class="control-label">Friend Name</label>
+                         <input type="email" class="form-control" id="i5i">
+                    </div>
+                    <div class="form-group label-floating is-empty">
+                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                         <label for="i5i" class="control-label">Email</label>
+                         <input type="email" class="form-control" id="i5i">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment" class="message">Message</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade forgotpass_modal refer_modal" id="comment-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Comment:</h4>
+                    <button type="button" class="close" data-dismiss="modal"><i class="zmdi zmdi-close"></i></button>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="form-group">
+                        <i class="zmdi zmdi-star-outline"></i><i class="zmdi zmdi-star-outline"></i>
+                        <i class="zmdi zmdi-star-outline"></i><i class="zmdi zmdi-star-outline"></i>
+                        <i class="zmdi zmdi-star-outline"></i>
+                        <textarea class="form-control" rows="10" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- your order popup  -->
+<div class="modal fade order_popup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+       <div class="modal-header">
+       <div class="modal_close clearfix">
+         <img src="images/modal_close.png" alt="modal_close" class="img-responsive" data-dismiss="modal">
+       </div>
+        <div class="order_title">
+          <h4 class="modal-title" id="gridSystemModalLabel">Your Orders</h4>
+          <div class="order_search">
+            <div class="form-group search_box">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <input type="text" class="form-control col-md-8" placeholder="Search all orders">
+            </div>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Search orders<div class="ripple-container"></div></button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="order_tabs">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">Orders</a></li>
+            <li><a href="#profile" data-toggle="tab">Open Orders</a></li>
+            <li><a href="#profile" data-toggle="tab">Cancelled Orders</a></li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="home">
+            <div class="table-responsive">
+              <table class="table">
+                <tr>
+                  <th>
+                    <div class="order_deliver_detail">
+                      <div class="order_detail_inner">
+                        <label>delivered</label>
+                        <div class="order_desc">
+                          <div class="order_no">Order No : <span>122263295</span></div>
+                          <div class="order_no">Placed On : <span>Tuesday, June 21,2016 /$291.48/2 items</span></div>
+                        </div>
+                      </div>
+                      <div class="ship_to">
+                        <div class="ship_person">
+                          Ship to 
+                          <div class="ship_person_name">
+                            John Milton
+                          </div>
+                        </div>
+                        <div class="ship_data">
+                          <p>8486 Sherwood Drive Lancaster, NY 14086</p>
+                        </div>
+                      </div>
+                    </div>  
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="shipment_detail">
+                        <div>Shipment 1 : <span>2 items</span><span>   Delivered On Friday, June 24, 2016</span></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="order_item_desc">
+                      <div class="order_table">
+                        <div class="order_image">
+                          <img src="images/order_item1.jpg" alt="order_item1" class="img-responsive">
+                        </div>
+                        <div class="order_details">
+                          <h3>roadster</h3>
+                          <p>RDSTR Navy T-shirt</p>
+                          <div><label>Size :</label><span>m</span>/ <label>Qty :</label>1</div>
+                          <div>Code :<span>967340</span></div>
+                        </div>
+                        <div class="order_price">
+                          $91.00
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="order_item_desc">
+                      <div class="order_table">
+                        <div class="order_image">
+                          <img src="images/order_item1.jpg" alt="order_item1" class="img-responsive">
+                        </div>
+                        <div class="order_details">
+                          <h3>roadster</h3>
+                          <p>RDSTR Navy T-shirt</p>
+                          <div><label>Size :</label><span>m</span>/ <label>Qty :</label>1</div>
+                          <div>Code :<span>967340</span></div>
+                        </div>
+                        <div class="order_price">
+                          $91.00
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="profile">
+              <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End popup  -->
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.10.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/moment-with-locales.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/ripples.js"></script>
+<script src="js/jquery.easydropdown.min.js"></script>
+<script src="js/material.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  $(document).ready(function(){
+      $(".ship_person_name").click(function(){
+          $(".ship_data").toggle();
+      });
+  });
+</script>
+</body>
+</html>
